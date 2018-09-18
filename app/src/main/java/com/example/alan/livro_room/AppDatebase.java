@@ -1,15 +1,12 @@
-package com.example.alan.livro_room.util;
+package com.example.alan.livro_room;
 
-import android.arch.persistence.db.SupportSQLiteOpenHelper;
 import android.arch.persistence.room.Database;
-import android.arch.persistence.room.DatabaseConfiguration;
-import android.arch.persistence.room.InvalidationTracker;
 import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
-import android.support.annotation.NonNull;
 
 import com.example.alan.livro_room.modelo.Livro;
+import com.example.alan.livro_room.util.LivroDao;
 
 @Database(entities = {Livro.class},version = 1)
 abstract class AppDatabase extends RoomDatabase {
